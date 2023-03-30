@@ -1,0 +1,11 @@
+.container--title {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.container--info-text {
+    color: white;
+    padding: 5px 20px;
+    max-width: calc(100% - 50px);
+}

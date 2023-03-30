@@ -1,0 +1,111 @@
+{
+    "store.custom#testing-page": {
+        "blocks": [
+            "flex-layout.row#test-text", 
+            "list-context.image-list#test-slider",
+            "flex-layout.row#info-row"
+        ]
+    },
+    "flex-layout.row#test-text": {
+        "props": {
+            "blockClass": "testing-title"
+        },
+        "children": ["flex-layout.col#test-text"]
+    },
+    "flex-layout.col#test-text": {
+        "children": ["rich-text#main-title"]
+    },
+    "rich-text#main-title": {
+        "props": {
+          "text":
+          "# This is a page with some test blocks.",
+          "blockClass": "title"
+        }
+    },
+
+
+    "list-context.image-list#test-slider": {
+        "children": ["slider-layout#test-images"],
+        "props": {
+          "height": 460,
+          "preload": true,
+          "images": [
+            {
+              "image": "assets/images/1d.jpg",
+              "mobileImage": "assets/images/1m.jpg"
+            },
+            {
+              "image": "assets/images/2d.jpg",
+              "mobileImage": "assets/images/1m.jpg"
+            }
+          ]
+        }
+      },
+      "slider-layout#test-images": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "blockClass": "test-slider"
+        }
+    },
+    "flex-layout.row#info-row": {
+        "props": {
+            "blockClass": "info-row"
+        },
+        "children": [
+            "flex-layout.col#info-col1",
+            "flex-layout.col#info-col2",
+            "flex-layout.col#info-col3"
+        ]
+    },
+    "flex-layout.col#info-col1": {
+        "props": {
+            "blockClass": "info-col"
+        },
+        "children": ["image#info-icon", "rich-text#info-text1"]
+    },
+    "flex-layout.col#info-col2": {
+        "props": {
+            "blockClass": "info-col"
+        },
+        "children": ["image#info-icon", "rich-text#info-text2"]
+    },
+    "flex-layout.col#info-col3": {
+        "props": {
+            "blockClass": "info-col"
+        },
+        "children": ["image#info-icon", "rich-text#info-text3"]
+    },
+    "rich-text#info-text1": {
+        "props": {
+          "text":
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "blockClass": "info-text"
+        }
+    },
+    "rich-text#info-text2": {
+        "props": {
+          "text":
+          "Ut enim ad minim veniam, quis nostrud.",
+          "blockClass": "info-text"
+        }
+    },
+    "rich-text#info-text3": {
+        "props": {
+          "text":
+          "Excepteur sint occaecat cupidatat non proident.",
+          "blockClass": "info-text"
+        }
+    },
+    "image#info-icon": {
+        "props": {
+            "blockClass": "info-icon",
+            "src": "assets/icons/flover.svg"
+        }
+    }
+}
