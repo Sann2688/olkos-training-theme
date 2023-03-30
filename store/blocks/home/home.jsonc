@@ -10,6 +10,7 @@
       "flex-layout.row#shelf",
       "info-card#home",
       "rich-text#question",
+      "countdown",
       "rich-text#link",
       "newsletter"
     ]
