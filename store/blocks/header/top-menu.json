@@ -2,7 +2,8 @@
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#shop",
-      "menu-item#about-us"
+      "menu-item#about-us",
+      "menu-item#testing-page"
     ]
   },
   "menu-item#shop": {
@@ -17,6 +18,20 @@
         "noFollow": false,
         "tagTitle": "Shop",
         "text": "Shop"
+      }
+    }
+  },
+  "menu-item#testing-page": {
+    "props": {
+      "id": "menu-item-testing-page",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/testing-page",
+        "noFollow": true,
+        "tagTitle": "Testing page",
+        "text": "Testing page"
       }
     }
   },

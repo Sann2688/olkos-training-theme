@@ -1,0 +1,22 @@
+.flexRow--testing-title {
+  border-bottom: 3px solid #0F3E99;
+}
+
+.flexCol--info-col, .flexRowContent--info-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexRowContent--info-row {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flexRow--info-row {
+  background: #0F3E99;
+}
+
+.flexColChild--info-col {
+  width: fit-content;
+}
